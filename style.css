@@ -1,0 +1,179 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header content */
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.left-nav{
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.center-nav ul li{
+    /* learn more about display : https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
+    display: inline;
+    list-style-type: none;
+    /* font-weight: bold; */
+    padding: 10px 25px;
+}
+
+.center-nav ul li a{
+    color: black;
+    /* Remove underline from navbar */
+    text-decoration: none;
+}
+
+.center-nav ul li a:hover{
+    color: #245E91;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.right-nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 10px 5px;
+}
+
+.right-nav ul li a img{
+    width: 35px;
+    height: 35px;
+}
+
+/* main content */
+main{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+    max-height: 400px;
+    background-image: url(/Source/Image/Cover.png);
+    /* Make the background responsive */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+h1{
+    color: #2C72AF; 
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 1;
+    opacity: .4; 
+    font-size: 25px;
+}
+
+main button{
+    color: white;
+    font-size: 20px;
+    background-color: #245E91;
+    border-style: none;
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main button:hover{
+    background-color: #b4d2ec;
+    color: black;
+    transition: .3s;
+}
+
+.portofolio{
+    padding-top: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 900px;
+    /* Make linear or gradient background  */
+    background: linear-gradient(to bottom, rgba(255, 122, 89,0),rgba(36, 94, 145, .10), rgba(255, 122, 89,0));
+}
+
+
+.card{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-layout{
+    background-color: white;
+    border-radius: 20px;
+    width: 25%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* using tamplate from : https://css-tricks.com/make-a-smooth-shadow-friend/ */
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.card-layout:hover{
+    background-color: #b4d2ec;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.image-layout{
+    text-align: center;
+}
+
+
+h3{
+    padding-bottom: 0;
+    color: #245E91;
+    font-size: 25px;
+}
+
+/* service */
+.service{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: auto;
+    height: 1000px;
+}
+
+.img-desc{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.option{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
